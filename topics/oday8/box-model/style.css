@@ -1,0 +1,19 @@
+section {
+    background: lightgray;
+
+    padding: 25px 20px 20px 20px;
+
+    border: 5px solid black;
+
+    margin: 20px;
+}
+/* .card {
+    width: 300px;
+    background: lightgray;
+} */
+.card {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 30px;
+    background: lightgray;
+}

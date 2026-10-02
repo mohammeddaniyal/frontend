@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 — Semantic Structure</title>
+</head>
+<body>
+
+
+<!-- Problem: Everything is just sitting inside the body -->
+
+<h1>My Profile</h1>
+
+<p>
+    I'm a professional developer and a passionate instructor.
+</p>
+
+<a href="contact.html">Contact Me</a>
+
+<h2>My Skills</h2>
+
+<ul>
+    <li>C</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>JavaScript</li>
+</ul>
+
+
+<!-- Solution: Give the page meaningful regions -->
+
+<header>
+    <h1>My Profile</h1>
+
+    <p>
+        I'm a professional developer and a passionate instructor.
+    </p>
+</header>
+
+
+<!-- Navigation belongs inside nav -->
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+<!-- Main contains the primary content of the page -->
+
+<main>
+
+    <!-- Problem: Main content contains different parts -->
+
+    <section>
+        <h2>About Me</h2>
+
+        <p>
+            I enjoy programming, building projects, and teaching.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>My Learning Journey</h2>
+
+        <ol>
+            <li>Learn programming fundamentals</li>
+            <li>Build real projects</li>
+            <li>Learn web development</li>
+        </ol>
+    </section>
+
+</main>
+
+
+<!-- Footer contains information belonging at the bottom -->
+
+<footer>
+    <p>© 2026 Mohammed Daniyal</p>
+</footer>
+
+
+<!-- Link vs Button -->
+
+<a href="contact.html">Go to Contact Page</a>
+
+<button>Follow Me</button>
+
+
+</body>
+</html>

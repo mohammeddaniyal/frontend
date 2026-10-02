@@ -1,0 +1,20 @@
+
+/* Element selector */
+
+p {
+    color: blue;
+}
+
+
+/* Class selector */
+
+.important {
+    color: red;
+}
+
+
+/* ID selector */
+
+#special {
+    color: green;
+}
