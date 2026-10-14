@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 — Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Day 9 — Flexbox</h1>
+
+    <section>
+        <h2>1. Problem: Boxes stack vertically</h2>
+        <p>Block elements normally appear on separate lines.</p>
+        <div class="demo">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <h3>Solution: display: flex</h3>
+        <p>The parent arranges its direct children in a row by default.</p>
+        <div class="demo flex">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Problem: What if we want a column?</h2>
+        <p>Use flex-direction to choose the direction.</p>
+
+        <h3>Row (default)</h3>
+        <div class="demo flex">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <h3>Column</h3>
+        <div class="demo flex column">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Problem: Put the row in the center</h2>
+        <p>justify-content controls items along the main axis.</p>
+        <div class="demo flex justify-center">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <h3>Other useful values</h3>
+        <p>space-between: first and last items sit at the edges.</p>
+        <div class="demo flex justify-between">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <p>space-around: space is distributed around each item.</p>
+        <div class="demo flex justify-around">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <p>space-evenly: equal space between items and at the edges.</p>
+        <div class="demo flex justify-evenly">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+<section>
+    <h2>4. Problem: Center the boxes on both axes</h2>
+
+    <h3>Part A: Row — horizontal and vertical centering</h3>
+    <p>
+        Remember Problem 3? We used justify-content: center
+        to center the row horizontally. Now combine it with
+        align-items: center to center the boxes vertically.
+    </p>
+
+    <div class="demo flex center-row">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h3>Part B: Column — horizontal and vertical centering</h3>
+    <p>
+        When flex-direction changes to column, the axes change too.
+        justify-content: center centers the boxes vertically,
+        while align-items: center centers them horizontally.
+    </p>
+
+    <div class="demo flex center-column">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</section>
+
+    <section>
+        <h2>5. Problem: The boxes need space between them</h2>
+        <p>gap adds consistent space between flex items.</p>
+        <div class="demo flex gap-demo">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Problem: The items don't fit on one line</h2>
+        <p>Without wrapping, items try to stay on one line. Try removing flex-wrap: wrap.</p>
+        <div class="demo flex wrap-demo">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+            <div class="box">Box 5</div>
+            <div class="box">Box 6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Quick mental model</h2>
+        <ul>
+            <li><code>display: flex</code> — arrange direct children with Flexbox.</li>
+            <li><code>flex-direction</code> — choose row or column.</li>
+            <li><code>justify-content</code> — arrange items along the main axis.</li>
+            <li><code>align-items</code> — align items along the cross axis.</li>
+            <li><code>gap</code> — add space between items.</li>
+            <li><code>flex-wrap</code> — allow items to move onto another line.</li>
+        </ul>
+    </section>
+</body>
+</html>
