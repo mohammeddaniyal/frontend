@@ -1,0 +1,13 @@
+# Ignore everything at the repository root.
+/*
+
+# Allow content only in these directories.
+!/notes/
+!/topics/
+!/project/
+
+# Keep this ignore file itself.
+!/.gitignore
+
+# Ignore macOS metadata files everywhere.
+.DS_Store
