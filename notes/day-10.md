@@ -25,7 +25,7 @@ In this lesson, we'll learn how CSS positioning helps control where elements app
 - `top: 30px` moves the element down by 30 pixels.
 - `left: 20px` moves it right by 20 pixels.
 
-**Example:** [Problem 1 — Relative positioning](../topics/day10/problem-1-relative.html)
+**Example:** [Problem 1 — Relative positioning](../topics/day-10/problem-1-relative.html)
 
 ## 2. Fixed positioning
 
@@ -42,7 +42,7 @@ In this lesson, we'll learn how CSS positioning helps control where elements app
 - `bottom: 20px` keeps the button 20 pixels from the bottom edge.
 - `right: 20px` keeps it 20 pixels from the right edge.
 
-**Example:** [Problem 2 — Fixed positioning](../topics/day10/problem-2-fixed.html)
+**Example:** [Problem 2 — Fixed positioning](../topics/day-10/problem-2-fixed.html)
 
 ## 3. Sticky positioning
 
@@ -57,7 +57,7 @@ In this lesson, we'll learn how CSS positioning helps control where elements app
 
 Here, `top: 0` makes the heading stick to the top edge when it reaches it.
 
-**Example:** [Problem 3 — Sticky positioning](../topics/day10/problem-3-sticky.html)
+**Example:** [Problem 3 — Sticky positioning](../topics/day-10/problem-3-sticky.html)
 
 ## 4. Absolute positioning
 
@@ -79,7 +79,7 @@ A common pattern is to give the parent `position: relative` and the child `posit
 
 In this example, the child is placed 10 pixels from the parent's top and right edges.
 
-**Example:** [Problem 4 — Absolute positioning](../topics/day10/problem-4-absolute.html)
+**Example:** [Problem 4 — Absolute positioning](../topics/day-10/problem-4-absolute.html)
 
 ## 5. `z-index`
 
@@ -99,7 +99,7 @@ When elements overlap, `z-index` helps control which one appears in front of ano
 
 Here, Box 1 appears in front of Box 2. `z-index` controls stacking order; it does not move an element around the page.
 
-**Example:** [Problem 5 — z-index](../topics/day10/problem-5-z-index.html)
+**Example:** [Problem 5 — z-index](../topics/day-10/problem-5-z-index.html)
 
 ## Extra example — Relative vs. absolute
 
@@ -108,7 +108,7 @@ Both `relative` and `absolute` can use offset properties, but they behave differ
 - **Relative:** the element moves visually from its normal position, and its original layout space is still accounted for.
 - **Absolute:** the element is removed from normal document flow and positioned relative to its nearest positioned ancestor (or another applicable containing block).
 
-**Example:** [Extra problem — Relative vs. absolute](../topics/day10/problem-extra-relative-vs-absolute.html)
+**Example:** [Extra problem — Relative vs. absolute](../topics/day-10/problem-extra-relative-vs-absolute.html)
 
 ## Quick revision
 
