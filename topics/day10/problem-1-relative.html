@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 — Relative Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            border: 2px dashed gray;
+            padding: 10px;
+            min-height: 130px;
+        }
+
+        .box {
+            width: 100px;
+            padding: 20px;
+            background: lightblue;
+            border: 1px solid steelblue;
+            text-align: center;
+        }
+
+        /* Experiment A: changes layout spacing */
+        .box-margin {
+            margin-top: 30px;
+        }
+
+        /* Experiment B: moves the box visually */
+        .box-relative {
+            position: relative;
+            top: 30px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Day 10 — CSS Positioning</h1>
+
+    <section>
+        <h2>Before: Normal layout</h2>
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiment A: Try margin</h2>
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box box-margin">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiment B: Try relative positioning</h2>
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box box-relative">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+    </section>
+</body>
+
+</html>
