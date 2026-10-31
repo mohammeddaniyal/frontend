@@ -1,0 +1,303 @@
+/* =========================
+   1. Basic Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   2. Hero Layout
+========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1300px;
+    min-height: 650px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+
+/* =========================
+   3. Hero Content
+========================= */
+
+.hero-content {
+    flex: 0.9;
+    max-width: 560px;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #1769ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 54px;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: #1769ff;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #52616b;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+
+/* =========================
+   4. CTA Buttons
+========================= */
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 24px;
+    border: 2px solid #1769ff;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background-color: #1769ff;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0d4fc4;
+    border-color: #0d4fc4;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #1769ff;
+}
+
+.btn-secondary:hover {
+    background-color: #f5f8ff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   5. Trust Indicators
+========================= */
+
+.hero-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    font-size: 14px;
+    color: #687780;
+}
+
+
+/* =========================
+   6. Large Hero Visual
+========================= */
+
+.hero-visual {
+    flex: 1.1;
+    min-width: 0;
+    height: 480px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-decoration {
+    position: absolute;
+
+    width: 90%;
+    height: 90%;
+
+    background-color: #eaf1ff;
+    border-radius: 30px;
+    transform: rotate(4deg);
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    border-radius: 24px;
+
+    box-shadow: 0 20px 50px rgba(23, 105, 255, 0.15);
+}
+
+
+/* =========================
+   7. Image Caption
+========================= */
+
+.image-caption {
+    position: absolute;
+    z-index: 2;
+
+    bottom: 25px;
+    left: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.caption-dot {
+    width: 9px;
+    height: 9px;
+    background-color: #1769ff;
+    border-radius: 50%;
+}
+
+
+/* =========================
+   8. Responsive Design
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        gap: 35px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-visual {
+        height: 400px;
+    }
+
+}
+
+
+/* =========================
+   9. Mobile Design
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+
+        min-height: auto;
+        padding: 50px 0;
+
+        gap: 45px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: 350px;
+    }
+
+    .hero-trust {
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================
+   10. Small Mobile Screens
+========================= */
+
+@media (max-width: 420px) {
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        height: 280px;
+    }
+
+    .image-caption {
+        bottom: 15px;
+        left: 15px;
+    }
+
+}
