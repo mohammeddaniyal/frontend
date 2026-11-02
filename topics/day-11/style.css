@@ -1,0 +1,30 @@
+button {
+    background-color: lightgray;
+    color: black;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+button:active {
+    background-color: red;
+}
+input {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+input:focus {
+    border-color: blue;
+    outline: 3px solid lightblue;
+}
+p:first-child {
+    color: green;
+}
+p:last-child {
+    color: red;
+}
+p:nth-child(2) {
+    color: blue;
+}
