@@ -1,10 +1,15 @@
 # Ignore everything at the repository root.
 /*
 
-# Allow content only in these directories.
+# Ignore every hidden folder
+.*/
+
+# Allow only the main learning folders and the required cheat sheet.
 !/notes/
 !/topics/
 !/project/
+!/emmet-cheat-sheet.md
+!/mini-component/
 
 # Keep this ignore file itself.
 !/.gitignore
