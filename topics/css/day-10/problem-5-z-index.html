@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS z-index</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 180px;
+    height: 120px;
+    padding: 15px;
+    color: white;
+    position: absolute;
+}
+
+.box-1 {
+    background-color: royalblue;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+}
+
+
+.box-2 {
+    background-color: crimson;
+    top: 150px;
+    left: 120px;
+    z-index: 2;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Understanding z-index</h1>
+
+    <div class="box box-1">Box 1</div>
+    <div class="box box-2">Box 2</div>
+
+</body>
+</html>

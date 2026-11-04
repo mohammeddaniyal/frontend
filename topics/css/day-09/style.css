@@ -1,0 +1,83 @@
+
+/* Small styles to make the Flexbox behavior visible. */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+.demo {
+    border: 1px dashed #777;
+    padding: 10px;
+    margin: 10px 0 18px;
+}
+
+.box {
+    width: 100px;
+    min-height: 60px;
+    padding: 10px;
+    border: 1px solid #333;
+    background: lightblue;
+    text-align: center;
+}
+
+/* Problem 1 */
+.flex {
+    display: flex;
+}
+
+/* Problem 2 */
+.column {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Problem 3 */
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* Problem 4A: Row — horizontal and vertical centering */
+.center-row {
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Problem 4B: Column — horizontal and vertical centering */
+.center-column {
+    flex-direction: column;
+    width: 360px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Problem 5 */
+.gap-demo {
+    gap: 20px;
+}
+
+/* Problem 6 */
+.wrap-demo {
+    width: 360px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
