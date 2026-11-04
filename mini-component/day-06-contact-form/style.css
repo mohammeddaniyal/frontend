@@ -1,0 +1,389 @@
+
+/* =========================
+   1. Basic Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8ff;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   2. Main Section
+========================= */
+
+.contact-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+
+/* =========================
+   3. Section Heading
+========================= */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    display: inline-block;
+    color: #1769ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-header h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #687780;
+    font-size: 16px;
+}
+
+
+/* =========================
+   4. Contact Layout
+========================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+
+/* =========================
+   5. Contact Information
+========================= */
+
+.contact-info {
+    background-color: #1769ff;
+    color: #ffffff;
+
+    padding: 40px;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h2 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.info-description {
+    color: #e3edff;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.info-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+
+    font-size: 21px;
+}
+
+.info-item h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    color: #e3edff;
+    font-size: 13px;
+}
+
+.info-bottom {
+    margin-top: auto;
+    padding-top: 35px;
+
+    color: #e3edff;
+    font-size: 14px;
+}
+
+
+/* =========================
+   6. Form Container
+========================= */
+
+.form-container {
+    background-color: #ffffff;
+
+    padding: 40px;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.form-description {
+    color: #687780;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   7. Form Groups
+========================= */
+
+.form-group {
+    margin-bottom: 22px;
+    min-width: 0;
+}
+
+.form-group label,
+.form-group legend {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+    color: #263238;
+}
+
+.form-group legend {
+    padding: 0;
+}
+
+
+/* =========================
+   8. Input, Select, Textarea
+========================= */
+
+
+
+.form-group input:not([type="radio"]):not([type="checkbox"]),
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dce2eb;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+    color: #263238;
+
+    background-color: #ffffff;
+
+    outline: none;
+
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+
+/* Input Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #1769ff;
+    box-shadow: 0 0 0 3px rgba(23, 105, 255, 0.12);
+}
+
+
+/* Placeholder */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa5b1;
+}
+
+
+/* =========================
+   9. Two Column Form Rows
+========================= */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+
+/* =========================
+   10. Radio & Checkbox
+========================= */
+
+fieldset.form-group {
+    border: none;
+    padding: 0;
+}
+
+.choice-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.choice {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px !important;
+    font-weight: normal !important;
+
+    cursor: pointer;
+    margin-bottom: 0 !important;
+}
+
+.choice input {
+    width: 16px;
+    height: 16px;
+    accent-color: #1769ff;
+    cursor: pointer;
+}
+
+
+/* =========================
+   11. Submit Button
+========================= */
+
+.submit-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #1769ff;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: background-color 0.25s ease,
+                transform 0.25s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0d4fc4;
+    transform: translateY(-2px);
+}
+
+.form-note {
+    text-align: center;
+    margin-top: 14px;
+
+    font-size: 12px;
+    color: #89939e;
+}
+
+
+/* =========================
+   12. Responsive Design
+========================= */
+
+@media (max-width: 850px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        min-height: 350px;
+    }
+
+}
+
+
+/* =========================
+   13. Mobile Design
+========================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .section-header h1 {
+        font-size: 30px;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+
+    .contact-info,
+    .form-container {
+        padding: 25px;
+    }
+
+    .contact-info h2 {
+        font-size: 23px;
+    }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .choice-group {
+        gap: 14px;
+    }
+
+}

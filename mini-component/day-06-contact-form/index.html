@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Impact | Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contact-section">
+
+        <!-- Section Heading -->
+        <div class="section-header">
+
+            <span class="section-label">
+                GET IN TOUCH
+            </span>
+
+            <h1>Let's Start Your Learning Journey</h1>
+
+            <p>
+                Have questions about our courses?
+                Fill out the form and let us help you choose
+                the right learning path.
+            </p>
+
+        </div>
+
+
+        <!-- Contact Layout -->
+        <div class="contact-container">
+
+            <!-- Left: Contact Information -->
+            <div class="contact-info">
+
+                <h2>Contact Information</h2>
+
+                <p class="info-description">
+                    Tell us what you want to learn.
+                    Our team can help you find the right course.
+                </p>
+
+                <div class="info-item">
+                    <span class="info-icon">✉</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>Get in touch with our team</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">☎</span>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>Talk to us about your learning goals</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">⌖</span>
+
+                    <div>
+                        <h3>Visit Us</h3>
+                        <p>Code Impact Academy</p>
+                    </div>
+                </div>
+
+                <div class="info-bottom">
+                    We're here to help you take your next step.
+                </div>
+
+            </div>
+
+
+            <!-- Right: Contact Form -->
+            <div class="form-container">
+
+                <h2>Send Us a Message</h2>
+
+                <p class="form-description">
+                    Fill in your details below.
+                </p>
+
+
+                <form>
+
+                    <!-- Name -->
+                    <div class="form-group">
+
+                        <label for="fullname">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullname"
+                            name="fullname"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email and Phone -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter phone number"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Age and Date -->
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="age">
+                                Age
+                            </label>
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                min="10"
+                                max="100"
+                                placeholder="Your age"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="joining-date">
+                                Preferred Joining Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="joining-date"
+                                name="joining-date"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Course Dropdown -->
+                    <div class="form-group">
+
+                        <label for="course">
+                            Select Your Course
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                        >
+
+                            <option value="" disabled selected>
+                                Choose a course
+                            </option>
+
+                            <option value="c">
+                                C Programming
+                            </option>
+
+                            <option value="cpp">
+                                C++ Programming
+                            </option>
+
+                            <option value="java">
+                                Java Programming
+                            </option>
+
+                            <option value="frontend">
+                                Frontend Development
+                            </option>
+
+                            <option value="python">
+                                Python with Django
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Radio Buttons -->
+                    <fieldset class="form-group">
+
+                        <legend>
+                            Preferred Batch
+                        </legend>
+
+                        <div class="choice-group">
+
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="batch"
+                                    value="morning"
+                                    required
+                                >
+                                Morning
+                            </label>
+
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="batch"
+                                    value="afternoon"
+                                >
+                                Afternoon
+                            </label>
+
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="batch"
+                                    value="evening"
+                                >
+                                Evening
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- Checkboxes -->
+                    <fieldset class="form-group">
+
+                        <legend>
+                            Preferred Learning Mode
+                        </legend>
+
+                        <div class="choice-group">
+
+                            <label class="choice">
+                                <input
+                                    type="checkbox"
+                                    name="learning-mode"
+                                    value="offline"
+                                >
+                                Offline
+                            </label>
+
+                            <label class="choice">
+                                <input
+                                    type="checkbox"
+                                    name="learning-mode"
+                                    value="online"
+                                >
+                                Online
+                            </label>
+
+                        </div>
+
+                    </fieldset>
+
+
+                    <!-- Message -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Your Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell us what you want to learn..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">
+                        Submit Enquiry
+                        <span>&rarr;</span>
+                    </button>
+
+
+                    <p class="form-note">
+                        Please check your details before submitting.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
