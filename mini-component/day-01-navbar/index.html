@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academy Navigation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="navbar">
         <a class="brand" href="#">
@@ -14,11 +16,25 @@
         </a>
         <nav class="nav-links">
             <a class="active" href="#">Home</a>
-            <a href="#">Courses</a>
+            <div class="course-dropdown">
+
+                <button class="courses-btn">Courses</button>
+
+                <div class="course-menu">
+                    <a href="#">C / C++</a>
+                    <a href="#">Java</a>
+                    <a href="#">Python</a>
+                    <a href="#">Web Development</a>
+                </div>
+
+            </div>
             <a href="#">Contact Us</a>
             <a href="#">About Us</a>
         </nav>
         <button class="nav-cta">Join Now</button>
+        <button class="menu-btn">☰</button>
     </header>
+    <script src="script.js"></script>
 </body>
+
 </html>

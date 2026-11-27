@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px 28px;
+    position: relative;
 }
 
 .brand {
@@ -52,3 +53,88 @@
     background-color: #0d4fc4;
 }
 
+.menu-btn
+{
+    display: none;
+    background: none;
+    border:none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* Courses Dropdown */
+
+.course-dropdown {
+    position: relative;
+}
+
+.courses-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #263238;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+
+.course-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+}
+
+/* Dropdown Links */
+
+.course-menu a {
+    display: block;
+    padding: 10px;
+    color: #263238;
+    text-decoration: none;
+}
+
+.course-menu a:hover {
+    background-color: #f1f5f9;
+}
+
+/* Show Dropdown */
+
+.course-dropdown.open .course-menu {
+    display: block;
+}
+
+/* mobile navigation */
+
+@media (max-width: 768px)
+{
+    .menu-btn{
+        display:block;
+    }
+    .nav-links
+    {
+        display:none;
+        flex-direction: column;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        padding:20px;
+    }
+    .nav-links.show
+    {
+        display: flex;
+    }
+   
+    .nav-cta
+    {
+        display: none;
+    }
+}
