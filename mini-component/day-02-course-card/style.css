@@ -46,7 +46,8 @@ body {
 .course-image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
 }
 
 .course-content {
@@ -62,6 +63,7 @@ body {
     color: #555555;
     line-height: 1.5;
     margin: 0 0 16px;
+    min-height: 72px;
 }
 
 .course-meta {
